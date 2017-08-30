@@ -1,14 +1,212 @@
 body {
     background-color: #ffffff;
-    height: 2000px;
+    color: #28292d;
+    font-family: Arial;
+    line-height: 1.625;
+}
+
+.img {
+    position: relative;
+    padding: 0 20px 20px 0;
+    margin: 0 20px 0 0;
+    overflow: hidden;
+}
+
+.img > img {
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+.img:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100%;
+    height: 100%;
+    background: transparent url(../images/SVG/Pattern_Zigzag_Orange.svg) repeat center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.img.red:before {
+    background-image: url(../images/SVG/Pattern_Zigzag_Red.svg);
+}
+
+.img.green:before {
+    background-image: url(../images/SVG/Pattern_Lines_Green.svg);
+}
+
+.img.purple:before {
+    background-image: url(../images/SVG/Pattern_Zigzag_Square_Purple.svg);
+}
+
+.img.purple-w:before {
+    background-image: url(../images/SVG/Pattern_Waves_Purple.svg);
 }
 
 .blockline {
+    position: relative;
     padding: 100px 0 80px;
     background: transparent none no-repeat center top;
     background-size: cover;
 }
 
-#banner {
-
+.blockline.gray {
+    background-color: #f9fafc;
 }
+
+.row-row .row + .row {
+    margin-bottom: 10px;
+}
+
+header {
+    position: fixed;
+    top: 19px;
+    left: 0;
+    width: 100%;
+    height: 53px;
+    padding: 10px 0;
+    background-color: transparent;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    z-index: 9999;
+}
+
+header.fixed {
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+#logo {
+    display: block;
+    width: 150px;
+    height: 33px;
+    text-decoration: none;
+    background: transparent url(../images/logo.svg) no-repeat left top;
+    background-size: contain;
+}
+
+.menu {
+    display: block;
+    padding: 0;
+    margin: 0 0 0 30px;
+    list-style: none;
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 1;
+}
+
+.menu > li {
+    display: block;
+    float: left;
+    padding: 0;
+    margin: 0;
+    border-bottom: 2px solid transparent;
+}
+
+.menu > li + li {
+    margin-left: 38px;
+}
+
+.menu > li.active {
+    border-bottom-color: #ffffff;
+}
+
+.menu > li > a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 0 9px;
+}
+
+#banner {
+    padding: 0;
+    color: #ffffff;
+    background-image: url(../images/banner.png);
+    overflow: hidden;
+}
+
+#banner > .container,
+#banner > .container > .row {
+    height: 100%;
+    z-index: 2;
+}
+
+#banner .title,
+#banner .subtitle {
+    font-family: 'Raleway';
+    line-height: 1;
+}
+
+#banner .title {
+    font-size: 3.375rem;
+    font-weight: 900;
+    margin: 0 0 58px 0;
+}
+
+#banner .subtitle {
+    font-size: 2.125rem;
+    font-weight: 500;
+    margin: 0 0 29px 0;
+}
+
+#banner .mouse {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin: 0 0 0 -11px;
+    width: 22px;
+    height: 100%;
+    z-index: 1;
+}
+
+#banner .mouse span {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    height: 44px;
+    background: transparent url(../images/SVG/Mouse.svg) no-repeat center bottom;
+    background-size: 100% auto;
+}
+
+/* HELPER
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
+
+    -webkit-box-shadow: rgba(0,0,0,0.5) 0px 1px 1px;
+       -moz-box-shadow: rgba(0,0,0,0.5) 0px 1px 1px;
+	   		box-shadow: rgba(0,0,0,0.5) 0px 1px 1px;
+
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+	   		border-radius: 50%;
+
+	-webkit-transform: rotate(10deg);
+       -moz-transform: rotate(10deg);
+	   	-ms-transform: rotate(10deg);
+	   	 -o-transform: rotate(10deg);
+	   	 	transform: rotate(10deg);
+
+	-webkit-transform-origin: 50% 50%;
+	   -moz-transform-origin: 50% 50%;
+	    -ms-transform-origin: 50% 50%;
+		 -o-transform-origin: 50% 50%;
+		 	transform-origin: 50% 50%;
+
+    -webkit-transition: 0.2s;
+       -moz-transition: 0.2s;
+	    -ms-transition: 0.2s;
+		 -o-transition: 0.2s;
+		 	transition: 0.2s;
+
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+*/

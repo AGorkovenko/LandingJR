@@ -1,101 +1,174 @@
 <!DOCTYPE html>
 <html lang="ru" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
-	<link rel="manifest" href="assets/images/favicon/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
-	<title>Landing Page Javarush.ru</title>
-	<!-- vk -->
-	<meta name="title" content="JavaRush - онлайн-курс обучения программированию на Java"/>
-	<meta name="description" content="JavaRush - Новый современный подход к изучению программирования и обучению в целом. Курс подходить как для новичков в сфере IT так и для программистов желающих расширить свои знания и повысить уровень программирования."/>
-	<link rel="image_src" href="assets/images/cover.jpg"/>
-	<!-- facebook & Open Graph -->
-	<meta property="og:url"/>
-	<meta property="og:type" content="website"/>
-	<meta property="og:site_name" content="Javarush">
-	<meta property="og:title" content="JavaRush — онлайн-курс обучения программированию на Java"/>
-	<meta property="og:description" content="JavaRush - Новый современный подход к изучению программирования и обучению в целом. Курс подходить как для новичков в сфере IT так и для программистов желающих расширить свои знания и повысить уровень программирования."/>
-	<meta property="og:image" content="assets/images/cover.jpg"/>
-	<!-- twitter -->
-	<meta name="twitter:card" content="summary"/>
-	<meta name="twitter:url"/>
-	<meta name="twitter:title" content="JavaRush - онлайн-курс обучения программированию на Java"/>
-	<meta name="twitter:description" content="JavaRush - Новый современный подход к изучению программирования и обучению в целом. Курс подходить как для новичков в сфере IT так и для программистов желающих расширить свои знания и повысить уровень программирования."/>
-	<meta name="twitter:domain" content="javarush.ru">
-	<meta name="twitter:image:src" content="assets/images/cover.jpg"/>
-	<!-- google -->
-	<meta itemprop="name" content="JavaRush - онлайн-курс обучения программированию на Java"/>
-	<meta itemprop="description" content="JavaRush - Новый современный подход к изучению программирования и обучению в целом. Курс подходить как для новичков в сфере IT так и для программистов желающих расширить свои знания и повысить уровень программирования."/>
-	<meta itemprop="image" content="assets/images/cover.jpg"/>
+    <title>Landing Page Javarush.ru</title>
+    <!-- vk -->
+    <meta name="title" content="JavaRush - онлайн-курс обучения программированию на Java"/>
+    <meta name="description"
+          content="JavaRush - Новый современный подход к изучению программирования и обучению в целом. Курс подходить как для новичков в сфере IT так и для программистов желающих расширить свои знания и повысить уровень программирования."/>
+    <link rel="image_src" href="assets/images/cover.jpg"/>
+    <!-- facebook & Open Graph -->
+    <meta property="og:url"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="Javarush">
+    <meta property="og:title" content="JavaRush — онлайн-курс обучения программированию на Java"/>
+    <meta property="og:description"
+          content="JavaRush - Новый современный подход к изучению программирования и обучению в целом. Курс подходить как для новичков в сфере IT так и для программистов желающих расширить свои знания и повысить уровень программирования."/>
+    <meta property="og:image" content="assets/images/cover.jpg"/>
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:url"/>
+    <meta name="twitter:title" content="JavaRush - онлайн-курс обучения программированию на Java"/>
+    <meta name="twitter:description"
+          content="JavaRush - Новый современный подход к изучению программирования и обучению в целом. Курс подходить как для новичков в сфере IT так и для программистов желающих расширить свои знания и повысить уровень программирования."/>
+    <meta name="twitter:domain" content="javarush.ru">
+    <meta name="twitter:image:src" content="assets/images/cover.jpg"/>
+    <!-- google -->
+    <meta itemprop="name" content="JavaRush - онлайн-курс обучения программированию на Java"/>
+    <meta itemprop="description"
+          content="JavaRush - Новый современный подход к изучению программирования и обучению в целом. Курс подходить как для новичков в сфере IT так и для программистов желающих расширить свои знания и повысить уровень программирования."/>
+    <meta itemprop="image" content="assets/images/cover.jpg"/>
 
-	<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&amp;subset=latin-ext"
+          rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/raleway-cyrillic/raleway.css">
 
-	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
 
 <header>
-	<div class="container">
-		<div class="row">
-			<div class="col-auto">
-				<div class="logo-wrap">
-					<a href="/" id="logo"></a>
-				</div>
-			</div>
-			<div class="col">
-				<ul>
-					<li>
-						<a href="">О профессии</a>
-					</li>
-					<li>
-						<a href="">О курсе</a>
-					</li>
-					<li>
-						<a href="">Процесс обучения</a>
-					</li>
-					<li>
-						<a href="">Стажировка</a>
-					</li>
-					<li>
-						<a href="">Отзывы</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-auto">
+                <div class="logo-wrap">
+                    <a href="/" id="logo"></a>
+                </div>
+            </div>
+            <div class="col">
+                <ul class="menu">
+                    <li class="active">
+                        <a href="">О профессии</a>
+                    </li>
+                    <li>
+                        <a href="">О курсе</a>
+                    </li>
+                    <li>
+                        <a href="">Процесс обучения</a>
+                    </li>
+                    <li>
+                        <a href="">Стажировка</a>
+                    </li>
+                    <li>
+                        <a href="">Отзывы</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </header>
 
-<div id="banner" class="blockline parallax" data-parallax="scroll" data-image-src="assets/images/banner.png">
-	<div class="container">
+<div id="banner" class="blockline" data-parallax="scroll" data-image-src="assets/images/banner.png"
+     data-natural-height="auto">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col">
+                <div class="subtitle wow fadeInLeft">Мечтаешь о перспективной работе?</div>
+                <div class="subtitle wow fadeInRight">Любишь технологии?</div>
+                <div class="title wow fadeInLeft">Становись программистом!</div>
+                <div>
+                    <a href="/" class="btn btn-warning btn-lg wow bounceIn" data-wow-delay="0.5s">Начать обучение </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mouse"><span class="wow fadeInDown infinite"></span></div>
+</div>
 
-	</div>
+<div class="blockline row-row">
+    <div class="container">
+        <h2 class="text-center">Три причины стать программистом</h2>
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <div class="img">
+                    <img src="assets/images/PNG/Office_google@2x.png">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 align-self-center">
+                <h3>Это перспективно</h3>
+                <p>Привычные профессии исчезают. Водителей, кассиров и фермеров сменят роботы, а вот потребность в
+                    программистах только вырастет! Если в середине 2015 года в мире насчитывалось 19 миллионов
+                    разработчиков, то к 2019 году компаниям потребуется не менее 25 миллионов таких специалистов*.</p>
+                <div class="small">*Прогноз аналитической компании Evans Data Corporation (EDC).</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6 align-self-center">
+                <h3>Это интересно</h3>
+                <p>Вы можете быть частью огромной команды разработки. Или создать собственную игру под Android. Или
+                    сначала создать игру, а потом взрастить её до уровня огромного проекта. Или…
+                    <тут может быть ваша идея>
+                </p>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="img green">
+                    <img src="assets/images/PNG/Developers@2x.png">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <div class="img purple-w">
+                    <img src="assets/images/PNG/Man_driving@2x.png">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 align-self-center">
+                <h3>За это хорошо платят </h3>
+                <p>Зарплата программиста существенно выше средней по рынку труда, и она растет вместе с вашим опытом. Вы
+                    будете чувствовать себя свободно, путешествуя по миру, а неизбежные кризисные явления в экономике
+                    будут влиять на вас гораздо меньше.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="blockline gray">
+    <div class="container">
+        <h2 class="text-center"><span class="d-block font-weight-normal">Программистом быть хорошо,</span> но какой язык программирования выбрать?</h2>
+    </div>
 </div>
 
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/tether/dist/js/tether.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="node_modules/jquery-parallax.js/parallax.min.js"></script>
+<script src="node_modules/wowjs/dist/wow.min.js"></script>
 <script src="assets/js/scripts.js"></script>
 </body>
 </html>
