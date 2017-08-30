@@ -1,0 +1,14 @@
+body {
+    background-color: #ffffff;
+    height: 2000px;
+}
+
+.blockline {
+    padding: 100px 0 80px;
+    background: transparent none no-repeat center top;
+    background-size: cover;
+}
+
+#banner {
+
+}

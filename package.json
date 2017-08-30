@@ -1,0 +1,22 @@
+{
+  "name": "landingpagejavarush",
+  "version": "1.0.0",
+  "description": "Landing page for promo Javarush.ru",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "jquery-parallax.js": "^1.4.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "-test"
+  },
+  "keywords": [
+    "landing",
+    "java",
+    "javarush",
+    "learning"
+  ],
+  "author": "Gorkovenko Andrey",
+  "license": "ISC"
+}
