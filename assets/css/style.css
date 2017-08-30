@@ -58,6 +58,23 @@ body {
     background-color: #f9fafc;
 }
 
+.blockline.light {
+    background-color: #f9fafc;
+}
+
+.blockline.dark {
+    background: #1f2023 url(../images/pattern.png) repeat center;
+    background-size: 7px auto;
+}
+
+.blockline.dark h2 {
+    color: #f48a40;
+}
+
+#counter {
+    background-image: url(../images/PNG/Background.png);
+}
+
 .row-row .row + .row {
     margin-bottom: 10px;
 }
